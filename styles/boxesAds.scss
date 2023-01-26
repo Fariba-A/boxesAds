@@ -1,0 +1,53 @@
+@import '../components/variables';
+@import '../components/variables';
+@import '../components/fourBoxesAds';
+@import '../components/threeBoxesAds';
+@import '../components/twoBoxesAds';
+
+.container {
+    padding: 1em;
+}
+
+.boxesAds {
+    display: grid;
+    gap: 1em;
+
+}
+
+a:not(.numb) {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 12.5em;
+    background-color: #f4f4f4;
+border-radius: 8px;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+}
+
+
+
+@include media(1100px) {
+    .boxesAds {
+      
+            a {
+                height: auto;
+            }
+        
+    }
+
+
+
+}
+
+@include media($mobile) {
+    .boxesAds {
+        gap: 0.5em;
+    }
+}

@@ -1,5 +1,5 @@
 let widthScreen = window.innerWidth;
-let swiperBoxes = document.querySelector(".boxes-four");
+let swiperBoxes = document.querySelector(".boxesAds");
 let gridScreenDevice=document.querySelector(".screen-grid");
 console.log(widthScreen);
 if (widthScreen < 480) {
@@ -11,7 +11,7 @@ if (widthScreen < 480) {
 }
 
 function swiper() {
-  var swiper = new Swiper(".boxes-four", {
+  var swiper = new Swiper(".boxesAds", {
     autoplay: true,
     loop: true
   });

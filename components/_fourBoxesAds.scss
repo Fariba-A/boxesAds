@@ -1,0 +1,11 @@
+.boxes-four{
+  
+    grid-template-columns: repeat(4, 1fr);
+
+    @include media($tablet){
+      
+        grid-template-columns: repeat(2, 1fr); 
+   
+}
+
+}
