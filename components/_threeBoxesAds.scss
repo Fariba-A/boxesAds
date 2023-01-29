@@ -1,17 +1,7 @@
 .boxes-three{
     grid-template-columns: repeat(3, 1fr);
-    @include media(1400px) {
-     
-          
-                a {
-                    height: auto !important;
-                }
-    
-    
-    
-    
-    }
-    @include media($tablet){
+
+    @include media($laptop){
       
         grid-template-columns: repeat(1, 1fr); 
    
